@@ -22,7 +22,7 @@ body {
 }
 
 .testimonial-thumb.active {
-    transform: scale(1.05);
+    transform: none;
     opacity: 1;
     border: 2px solid #800020;
 }
