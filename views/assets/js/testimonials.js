@@ -39,7 +39,6 @@ let currentIndex = 0;
 const mainImage = document.getElementById("testimonial-main-img");
 const secondaryImage = document.getElementById("testimonial-secondary-img");
 const bottomLossValue = document.getElementById("testimonial-bottom-loss");
-const bottomMonthsValue = document.getElementById("testimonial-bottom-months");
 const quoteValue = document.getElementById("testimonial-quote");
 const nameValue = document.getElementById("testimonial-name");
 const thumbs = Array.from(document.querySelectorAll(".testimonial-thumb"));
@@ -50,8 +49,7 @@ function renderTestimonial(index) {
     secondaryImage.src = testimonial.secondaryImage;
     quoteValue.textContent = `"${testimonial.quote}"`;
     nameValue.textContent = `— ${testimonial.name}`;
-    bottomLossValue.innerHTML = `<span class="block text-2xl md:text-3xl font-black text-white leading-tight"><span class="text-[#800020]">${testimonial.loss.replace(/\s*kg/i, '')}</span></span><span class="uppercase tracking-[0.3em] text-[#800020] text-xs md:text-sm">KG</span>`;
-    bottomMonthsValue.innerHTML = `<span class="uppercase tracking-[0.3em] text-[#800020] text-xs md:text-sm">MESES</span><span class="block text-2xl md:text-3xl font-black text-white leading-tight"><span class="text-[#800020]">${testimonial.months}</span></span>`;
+    bottomLossValue.innerHTML = `<span class="text-2xl md:text-3xl font-black leading-tight"><span class="text-white">${testimonial.loss.replace(/\s*kg/i, '')}</span> <span class="text-[#800020]">KG</span></span>`;
 
     thumbs.forEach((thumb, thumbIndex) => {
         const relativeIndex = (index - 2 + thumbIndex + testimonials.length) % testimonials.length;
