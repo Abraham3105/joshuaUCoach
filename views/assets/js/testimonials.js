@@ -1,52 +1,29 @@
 const testimonials = [
     {
-        name: "Carlos M.",
+        name: "Abraham Cascante.",
         quote: "En solo 3 meses perdí 8kg sin perder fuerza. Cada meta fue planificada y progresiva.",
-        image: "../assets/imagenes/doMore.jpg",
-        secondaryImage: "../assets/imagenes/joshua1.jpeg",
-        loss: "-8 kg",
-        months: "3"
+        image: "../assets/imagenes/cambio01.jpeg",
+        secondaryImage: "../assets/imagenes/cambio1.jpeg",
+        loss: "-4 kg",
+        months: "12"
     },
     {
-        name: "Ana G.",
+        name: "Ivan Solís.",
         quote: "Mejoré mi postura y energía. El plan estuvo enfocado en resultados reales y sostenibles.",
-        image: "../assets/imagenes/joshua-urena-training.jpg",
-        secondaryImage: "../assets/imagenes/joshua2.jpeg",
+        image: "../assets/imagenes/cambio02.jpeg",
+        secondaryImage: "../assets/imagenes/cambio2.jpeg",
         loss: "-6 kg",
         months: "2"
     },
     {
-        name: "Diego R.",
+        name: "",
         quote: "Siento más confianza en el gimnasio. El seguimiento fue constante y siempre con enfoque técnico.",
-        image: "../assets/imagenes/joshua1.jpeg",
-        secondaryImage: "../assets/imagenes/joshuaUrena.jpeg",
+        image: "../assets/imagenes/cambio03.jpeg",
+        secondaryImage: "../assets/imagenes/cambio3.jpeg",
         loss: "-9 kg",
         months: "4"
     },
-    {
-        name: "María S.",
-        quote: "Los cambios fueron rápidos y claros. Me ayudó a ganar condición sin dejar de disfrutar el proceso.",
-        image: "../assets/imagenes/joshua2.jpeg",
-        secondaryImage: "../assets/imagenes/rockLee.jpg",
-        loss: "-7 kg",
-        months: "3"
-    },
-    {
-        name: "Luis F.",
-        quote: "Cada entrenamiento fue desafiante y personalizado. Mis resultados hablaron por sí solos.",
-        image: "../assets/imagenes/joshuaUrena.jpeg",
-        secondaryImage: "../assets/imagenes/doMore.jpg",
-        loss: "-5 kg",
-        months: "2"
-    },
-    {
-        name: "Nora V.",
-        quote: "Logré constancia y disciplina. El apoyo fue clave para mantenerme motivada todo el camino.",
-        image: "../assets/imagenes/rockLee.jpg",
-        secondaryImage: "../assets/imagenes/joshua-urena-training.jpg",
-        loss: "-10 kg",
-        months: "4"
-    }
+    
 ];
 
 let currentIndex = 0;
