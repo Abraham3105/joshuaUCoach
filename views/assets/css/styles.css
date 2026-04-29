@@ -1,0 +1,111 @@
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.hero-gradient {
+    background: linear-gradient(0deg, #0F0F0F 0%, rgba(15, 15, 15, 0.4) 50%, rgba(15, 15, 15, 0) 100%);
+}
+
+.burgundy-glow {
+    box-shadow: 0 0 30px 5px rgba(128, 0, 32, 0.3);
+}
+
+body {
+    min-height: max(884px, 100dvh);
+}
+
+.testimonial-thumb {
+    border-radius: 1rem;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.testimonial-thumb.active {
+    transform: scale(1.05);
+    opacity: 1;
+    border: 2px solid #800020;
+}
+
+.testimonial-thumb.inactive {
+    opacity: 0.35;
+}
+
+.testimonial-card {
+    min-height: 420px;
+}
+
+@media (max-width: 1023px) {
+    .testimonial-card {
+        min-height: auto;
+        padding: 2rem 1.25rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .testimonial-card {
+        min-height: auto;
+        padding: 1.5rem 1rem;
+    }
+
+    .testimonial-card .grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .testimonial-card .aspect-[3/4] {
+        aspect-ratio: 4 / 5;
+        max-height: 300px;
+    }
+
+    .testimonial-card .absolute.inset-x-3 {
+        left: 0.75rem;
+        right: 0.75rem;
+        bottom: 1rem;
+        padding: 0.75rem;
+    }
+
+    .testimonial-card .text-4xl {
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    .testimonial-card .text-[10px] {
+        font-size: 0.625rem;
+    }
+
+    .testimonial-card .grid.grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .testimonial-card .grid.grid-cols-2 .aspect-[3/4] {
+        aspect-ratio: 3 / 4;
+        max-height: 200px;
+    }
+
+    .testimonial-card #testimonial-quote {
+        font-size: 0.875rem;
+        line-height: 1.4;
+    }
+
+    .testimonial-card #testimonial-name {
+        font-size: 0.75rem;
+        margin-top: 0.5rem;
+    }
+}
+
+.testimonial-thumbs {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.testimonial-thumbs::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial-thumb {
+    min-width: 4.5rem;
+    min-height: 4.5rem;
+}
